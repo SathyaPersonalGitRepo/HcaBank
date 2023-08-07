@@ -44,15 +44,15 @@ public class BankingController {
 
     }
 
-    @PostMapping("/create")
+    @PostMapping
     public Boolean createAccount(@RequestBody AccountRequest accountRequest) {
         return accountService.createAccount(accountRequest);
 
     }
 
-    @PutMapping("/update")
+    @PutMapping
     public Boolean updateAccount(@RequestBody AccountRequest accountRequest) {
-        return accountService.createAccount(accountRequest);
+        return accountService.updateAccount(accountRequest);
 
     }
     @GetMapping("/{accountNumber}")
@@ -66,7 +66,7 @@ public class BankingController {
 
     }
 
-    @DeleteMapping()
+    @DeleteMapping
     public Boolean deleteAccount(@RequestBody AccountRequest accountRequest) {
         return accountService.removeAccount(accountRequest);
 
