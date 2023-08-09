@@ -1,4 +1,4 @@
-FROM openjdk:11-jdk-alpine
+FROM adoptopenjdk/openjdk11:latest
 MAINTAINER sathya
 WORKDIR /opt/app
 ARG JAR_FILE=build/libs/HcaBank-0.0.1-SNAPSHOT.jar
